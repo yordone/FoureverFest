@@ -49,7 +49,7 @@ export function LoadingScreen({ onComplete }: Props) {
             {/* Glow dot */}
             <div
               className="absolute bg-[#fc6205] blur-[6px] opacity-70 rounded-full w-4 h-4 top-[-7.5px] transition-all duration-75"
-              style={{ left: `calc(${progress}% - 8px)`, minLeft: 0 }}
+              style={{ left: `calc(${progress}% - 8px)` }}
             />
           </div>
 

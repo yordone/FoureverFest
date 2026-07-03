@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { motion, useInView, AnimatePresence } from "motion/react";
+import { motion, useInView, AnimatePresence, Variants } from "motion/react";
 import { Calendar, MapPin, ChevronDown, Play, Music, Users, Clock, Star } from "lucide-react";
 
 import imgHeroBg from "../../imports/FoureverLanding/58638305ae73cf9c99a8fa98e5879b3d6f772d7b.png";
@@ -17,11 +17,11 @@ import logoSampoerna from "../../assets/sponsors/LogoSampoerna.webp";
 /* ─── figma lineup card backgrounds (removed) ──────────────────── */
 
 /* ─── motion variants ─────────────────────────────────── */
-const stagger = {
+const stagger: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.09, delayChildren: 0.15 } },
 };
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.16, 1, 0.3, 1] } },
 };
